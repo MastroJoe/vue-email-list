@@ -28,3 +28,10 @@
   padding: 3px;
   text-align: center;
 }
+
+button {
+  font-size: 25px;
+  border-radius: 15px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
