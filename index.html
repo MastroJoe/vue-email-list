@@ -15,9 +15,11 @@
     <div class="container">
       <!-- lista di mails -->
       <div class="list">
+        <h1>Emails Generator</h1>
         <ul>
-          <!-- v-for per stampare le mails generate -->
-          <li v-for="(email, i) in emails">
+          <!-- v-for per stampare le mails generate, max 10 -->
+          <li v-for="(email, i) in emails"
+              v-if="emails.length == 10">
             {{ emails[i] }}
           </li>
         </ul>

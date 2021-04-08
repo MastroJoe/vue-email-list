@@ -35,3 +35,9 @@ button {
   padding: 10px 10px;
   cursor: pointer;
 }
+
+h1 {
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 45px;
+}
