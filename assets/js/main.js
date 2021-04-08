@@ -7,13 +7,19 @@ var app = new Vue(
   {
     el: '#root',
     data: {
-      mails: []
+      emails: []
     },
     methods: {
-      // axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
-      // .then((response) => {
-      //   this.indirizzo.push(response.data.response)
-      // });
+      // funzione per generare mail random con API
+      generaEmails: function () {
+        // ciclo e genero 10 volte
+        for (var i = 1; i <= 10; i++) {
+          axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
+          .then((response) => {
+            this.emails.push(response.data.response)
+          });
+        }
+      }
     }
   }
 );
